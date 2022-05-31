@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    
+<!-- Mirrored from html.multipurposethemes.com/pregnancy/pregnancy-five/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 26 May 2022 10:36:49 GMT -->
+
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="#">
+        
+        <title>MOM'S LAP</title>
+
+        <!-- plugins -->
+        <link rel="stylesheet" type="text/css" href=" {% static 'css/plugin.css' %} " />
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">      -->
+
+        
+        <!-- Revolution Slider -->		
+		<link rel="stylesheet" type="text/css" href=" {% static 'vendor/revolution-slider/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css' %} ">
+		<link rel="stylesheet" type="text/css" href=" {% static 'vendor/revolution-slider/revolution/css/settings.css' %} ">
+		<link rel="stylesheet" type="text/css" href=" {% static 'vendor/revolution-slider/revolution/css/layers.css' %} ">
+		<link rel="stylesheet" type="text/css" href=" {% static 'vendor/revolution-slider/revolution/css/navigation.css' %} ">        
+
+        <!-- typography -->
+        <link rel="stylesheet" type="text/css" href=" {% static 'css/typographies.css' %} " />
+
+        <!-- templete element -->
+        <link rel="stylesheet" type="text/css" href=" {% static 'css/template-element.css' %} " />        
+
+        <!-- template CSS -->
+        <link href=" {% static 'css/style.css' %} " rel="stylesheet">
+
+        <!-- responsive CSS -->
+        <link href=" {% static 'css/responsive.css' %} " rel="stylesheet">
+
+         <!-- custom CSS -->
+        <link href=" {% static 'css/custom.css' %} " rel="stylesheet">
+</head>
+<body>
+
+    <header>			
+        <nav hidden class="nav-white nav-transparent full-width">
+            <div class="nav-header">
+                <a href="{% url 'Home'%}" class="brand">
+                    <h3><b style="color:rgb(71, 5, 33)">MOM'S LAP</b></h3>
+                    <h6 style="color:#fea38e">An Ayurvedic post partum care center</h6>
+                </a>
+                <button class="toggle-bar">
+                    <span class="ti-menu"></span>
+                </button>	
+            </div>								
+            <ul class="menu">
+                <li class="scrollspy active"><a href="{% url 'Home' %}">Home</a></li>
+                <li class="scrollspy"><a href="{% url 'About' %}">About Us</a></li>
+                <li class="scrollspy"><a href="{% url 'Service' %}">Facilities</a></li>
+                <li class="scrollspy"><a href="{% url 'Specialities' %}">Specialities</a></li>
+                <!-- <li class="scrollspy"><a href="{% url 'Testimonial' %}">Testimonials</a></li> -->
+                <li class="scrollspy"><a href="{% url 'Team' %}">Doctors</a></li>
+                <li class="scrollspy"><a href="{% url 'Gallery' %}">Gallery</a></li>
+                <li class="scrollspy"><a href="{% url 'Contact' %}">Contact</a></li>
+            </ul>
+            <ul class="attributes">
+                <li><a href="#" class="toggle-search-fullscreen"><span class="ti-search"></span></a></li>					
+            </ul>				
+            <div class="wrap-search-fullscreen">
+                <button class="close-search"><span class="ti-close"></span></button>
+                <input type="text" placeholder="Search..." />
+            </div>
+        </nav>
+    </header>
+
+
+{% block content %}    {% endblock %}
+<br>
+<br>
+
+    <section class="d-md-block d-none">
+        <img src=" {% static 'images/bg-footer.png' %} " class="img-fluid" alt="" >
+    </section>
+    <footer class="footer footer-3 bg-blue pt-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <h1 style="margin-top: 75px;"><b style="color:rgb(71, 5, 33)">MOM'S LAP</b></h1>
+
+                    <!-- <h4 class="mb-30 mt-10 text-uppercase">Subscribe</h4>
+                    <p class="mb-30">Sign Up to our Newsletter and get the latest offers.</p>
+                    <input class="form-control placeholder" type="text" placeholder="Email address" name="email1" value="">
+                    <div class="clear">
+                        <button type="submit" class="cs-button mt-20 form-button"> Get notified </button>
+                    </div> -->
+                </div>
+                <div class="col-lg-4 col-sm-6 xs-pt-30">
+                    <h4 class="mb-30 mt-10 text-uppercase">Contact Us</h4>
+                    <ul class="address">
+                        <li><i class="fa fa-map-marker"></i>
+                            <p>Chenganeeri, Kizhisseri, Kuzhimanna (P.O), Malappuram, Kerala, India</p>
+                        </li>
+                        <li><i class="fa fa-phone"></i>
+                            <a href="tel:7593999200"> <span>+91-7593999200</span> </a>
+                        </li>
+                        <li><i class="fa fa-phone"></i>
+                            <a href="tel:7594999200"> <span>+91-7594999200 </span> </a>
+                        </li>
+                        <li><i class="fa fa-envelope-o"></i>Email: momslap969@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-sm-6 sm-mt-30">
+
+                </div>
+
+                <div class="col-lg-2 col-sm-6 sm-mt-30">
+                    <div class="footer-link footer-link-hedding">
+                        <h4 class="mb-30 mt-10 text-uppercase">Quick Link</h4>
+                        <ul>
+                            <li><a href="{% url 'Home' %}">Home</a></li>
+                            <li><a href="{% url 'About' %}">About Us</a></li>
+                            <li><a href="{% url 'Service' %}">Facilities</a></li>
+                            <li><a href="{% url 'Specialities' %}">Specialities</a></li>
+                            <li><a href="{% url 'Gallery' %}">Gallery</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright mt-20">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <p class="mt-15 ml-5 pl-5"> ©Copyright <span id="copyright">2022</span> <a href="#"> Mom's Lap </a> All Rights Reserved </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 text-left text-md-right">
+                        <div class="social-icons color-hover mt-10">
+                            <ul> 
+                                <!-- <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li class="social-instagram"><a href="#"><i class="fa fa-instagram"></i> </a></li>
+                                <li class="social-linkedin"><a href="#"><i class="fa fa-linkedin"></i> </a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+	
+</body>
+
+    <!-- jQuery -->
+    <script src=" {% static 'vendor/jquery/jquery.min.js' %} "></script>
+
+    <!-- Popper -->
+    <script src=" {% static 'vendor/js/popper.min.js' %} "></script>
+
+    <!-- bootstrap Core JavaScript -->
+    <script src=" {% static 'vendor/bootstrap/js/bootstrap.min.js' %} "></script>
+    
+    <!-- Corenav Master JavaScript -->
+    <script src=" {% static 'vendor/corenav-master/coreNavigation-1.1.3.js' %} "></script>
+    <script src=" {% static 'js/nav.js' %} "></script>
+
+    <!--carousel script -->
+    <script src=" {% static 'vendor/owlcarousel/js/owl.carousel.min.js' %} "></script>
+    <script src=" {% static 'vendor/owlcarousel/js/jquery.mousewheel.min.js' %} "></script>
+
+    <!-- nice-select -->
+    <script src=" {% static 'vendor/jquery-nice-select/jquery-nice-select.js' %} "></script>
+
+    <!-- custom JavaScript -->
+    <script src=" {% static 'js/custom.js' %} "></script>
+
+    <!-- prettyPhoto -->
+    <script src=" {% static 'vendor/prettyPhoto/js/jquery.prettyPhoto.js' %} "></script>
+
+    <!-- custom JavaScript -->
+    <script src=" {% static 'js/customizer.js' %} "></script>
+	
+	<!-- template JavaScript -->
+    <script src=" {% static 'js/template.js' %} "></script>
+    
+    <!-- REVOLUTION JS FILES -->
+	<script type="text/javascript" src=" {% static 'vendor/revolution-slider/revolution/js/jquery.themepunch.tools.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/revolution-slider/revolution/js/jquery.themepunch.revolution.min.js' %} "></script>
+
+	<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->	
+	<script type="text/javascript" src=" {% static 'vendor/revolution-slider/revolution/js/extensions/revolution.extension.actions.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/revolution-slider/revolution/js/extensions/revolution.extension.carousel.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/revolution-slider/revolution/js/extensions/revolution.extension.kenburn.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/revolution-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/revolution-slider/revolution/js/extensions/revolution.extension.migration.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/revolution-slider/revolution/js/extensions/revolution.extension.navigation.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/revolution-slider/revolution/js/extensions/revolution.extension.slideanims.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/revolution-slider/revolution/js/extensions/revolution.extension.video.min.js' %} "></script>
+    <script src=" {% static 'js/revolution-slider.js' %} " type="text/javascript"></script>
+    
+    <!--jarallax javascript -->
+    <script src=" {% static 'js/jarallax.js' %} "></script>
+    
+	
+
+<!-- Mirrored from html.multipurposethemes.com/pregnancy/pregnancy-five/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 26 May 2022 10:36:49 GMT -->
+</html>

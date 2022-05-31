@@ -1,0 +1,681 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %} 
+		<!-- Start Slider -->
+
+
+	{% for i in data %}
+		<section id="home">
+			<article class="content">	
+
+				<div id="rev_slider_1083_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="travel" data-source="gallery" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+				<!-- START REVOLUTION SLIDER 5.4.1 auto mode -->
+				
+					<div id="rev_slider_1083_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
+						<ul>	<!-- SLIDE  -->
+							<li data-index="rs-3070" data-transition="parallaxhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Number One" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+								<!-- MAIN IMAGE -->
+								<!-- <img src=" {% static 'images/travel2.jpg' %} "  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina> -->
+								<video autoplay muted loop id="myVideo"
+								src="{{i.banner_video.url}}"
+								poster="https://www.rexburgcamprentals.com/wp-content/uploads/2018/06/low-res-banner.jpg"
+								></video>
+								<!-- LAYERS -->
+							</li>
+							<!-- SLIDE  -->
+							<li data-index="rs-3071" data-transition="parallaxhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0"  data-saveperformance="off"  data-title="Number Two" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+								<!-- MAIN IMAGE -->
+								<img src=" {{ i.banner_img.crop.1920x1080 }} "  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+								<!-- LAYERS -->
+							</li>
+						</ul>
+						<div style="" class="tp-static-layers">
+							<!-- LAYER NR. 1 -->
+							<div class="tp-caption Travel-BigCaption   tp-resizeme tp-static-layer" 
+								 id="slider-1083-layer-1" 
+								 data-x="['left','left','left','left']" data-hoffset="['90','90','60','40']" 
+								 data-y="['center','center','center','center']" data-voffset="['-30','-30','-10','-50']" 
+								 data-fontsize="['48','100','80','50']"
+								 data-lineheight="['150','100','80','50']"
+								data-width="none"
+								data-height="none"
+								data-whitespace="nowrap"
+
+								data-type="text" 
+								data-responsive_offset="on" 
+
+								data-startslide="0" 
+								data-endslide="3" 
+								data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":500,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+								data-textAlign="['left','left','left','left']"
+								data-paddingtop="[0,0,0,0]"
+								data-paddingright="[0,0,0,0]"
+								data-paddingbottom="[0,0,0,0]"
+								data-paddingleft="[0,0,0,0]"
+
+								style="z-index: 5; white-space: nowrap;text-transform:left; color: #fea38e; font-weight: 900">പ്രസവാനന്തര ശുശ്രൂഷ</div>
+
+							<!-- LAYER NR. 2 -->
+							<div class="tp-caption Travel-SmallCaption   tp-resizeme tp-static-layer" 
+								 id="slider-1083-layer-2" 
+								 data-x="['left','left','left','left']" data-hoffset="['90','90','60','40']" 
+								 data-y="['center','center','center','center']" data-voffset="['80','80','80','00']" 
+											data-fontsize="['25','25','25','20']"
+								data-lineheight="['30','30','30','20']"
+								data-width="none"
+								data-height="none"
+								data-whitespace="nowrap"
+
+								data-type="text" 
+								data-responsive_offset="on" 
+
+								data-startslide="0" 
+								data-endslide="3" 
+								data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":500,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+								data-textAlign="['left','left','left','left']"
+								data-paddingtop="[0,0,0,0]"
+								data-paddingright="[0,0,0,0]"
+								data-paddingbottom="[0,0,0,0]"
+								data-paddingleft="[0,0,0,0]"
+
+								style="z-index: 6; white-space: nowrap;text-transform:left; color: #222222;">പ്രസവശേഷം 40 വരെ ഞങ്ങളുണ്ട് നിങ്ങളുടെ കൂടെ.  </div>
+
+							<!-- LAYER NR. 3 -->
+							<div class="tp-caption Travel-CallToAction cs-button x-small  tp-static-layer" 
+								 id="slider-1083-layer-3" 
+								 data-x="['left','left','left','left']" data-hoffset="['90','90','60','40']" 
+								 data-y="['center','center','center','center']" data-voffset="['150','150','150','60']" 
+											data-width="none"
+								data-height="none"
+								data-whitespace="nowrap"
+
+								data-type="button" 
+								data-actions='[{"event":"click","action":"scrollbelow","offset":"px","delay":""}]'
+								data-responsive_offset="on" 
+								data-responsive="off"
+								data-startslide="0" 
+								data-endslide="3" 
+								data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":500,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(61, 9, 31, 1.00);bg:#fea38e;bw:2px 2px 2px 2px;"}]'
+								data-textAlign="['left','left','left','left']"
+								data-paddingtop="[10,10,10,10]"
+								data-paddingright="[20,20,20,20]"
+								data-paddingbottom="[10,10,10,10]"
+								data-paddingleft="[20,20,20,20]"
+
+								style="z-index: 7; white-space: nowrap;text-transform:left;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Talk To Us</div>
+						</div>
+					</div>
+				</div><!-- END REVOLUTION SLIDER -->
+
+			</article>
+		</section>	
+		<!-- End Slider -->
+		<section class="bg-shape">
+            <img src=" {% static 'images/bg-shape.png' %} " class="img-fluid" alt="" >
+		</section>
+		<section id="services" class="section-pb-80 xs-pt-50 bg-lightorange position-relative" style="z-index: 1; margin-top: -1px;">
+            <div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-8">
+						<div class="section-heading text-center">
+							<h2 class="heading">മികച്ച പ്രസവാനന്തര ചികിത്സകൾ</h2>
+							<h4>ഇനി മലപ്പുറത്തും 
+								പ്രസവാനന്തര പരിചരണങ്ങൾ</h4>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-30 justify-content-center">
+					<div class="col-lg-11 col-12">						
+                        <div class="owl-carousel owl-theme" data-nav-dots="false"  data-nav-arrow="true"  data-items="1" data-md-items="1" data-sm-items="1" data-xs-items="1" data-xx-items="1">
+                            <div class="item">
+								<p class="text-center">പ്രസവത്തിന് ശേഷം ഒരു സ്ത്രീ ശാരീരികമായും മാനസികമായും നിരവധി മാറ്റങ്ങളിലൂടെ കടന്നുപോവുന്നു. ഒരോ പ്രസവവും കുഞ്ഞിനോടൊപ്പം തന്നെ ഒരു അമ്മയ്ക്കും ജന്മം നൽകുന്നു. ഈ പുതുജന്മങ്ങൾക് ആവശ്യമായിട്ടുള്ള എല്ലാവിധ ശുശ്രുഷകളും mom's lapൽ ലഭ്യമാണ്.</p>
+							</div>
+                            <div class="item">
+								<p class="text-center">അമ്മയ്ക്കും കുഞ്ഞിനുമുള്ള മികച്ച പ്രസവാനന്തര ചികിത്സകൾ ഇനി മലപ്പുറത്തിൻ്റെ മണ്ണിലും. അമ്മയുടെയും കുഞ്ഞിൻ്റെയും ആരോഗ്യം നിലനിർത്താൻ മികച്ച നിലവാരമുള്ള ചികിത്സാരീതികളും പരിചരണങ്ങണങ്ങളും ഇനി നിങ്ങൾക്കും സ്വന്തമാക്കാം. </p>
+							</div>
+                            <div class="item">
+								<p class="text-center">അമ്മയുടെയും കുഞ്ഞിൻ്റെയും പരിപൂർണ്ണ പരിചരണനത്തിനായ് ഒട്ടനവധി ചികിത്സകൾ mom's lap ൽ ലഭ്യമാണ്.  mom's lap ൽ വന്നുചേരുന്ന എല്ലാവർക്കും വിശാലമായ താമസ സൗകര്യങ്ങളും ( Normal / VIP ), വൈദിക പരിപാലനവും പോഷകസമൃദ്ധമായ ഭക്ഷണവും ഞങ്ങൾ ഒരുക്കിയിരിക്കുന്നു.</p>
+							</div>
+						</div>
+					</div>
+                </div>
+				
+				<div class="row mt-50">
+					<div class="col-lg-6 col-12">						
+                        <div class="ser-bx mb-30">
+							<div class="d-md-flex d-block">
+								<img src=" {{ i.ayurved_img.crop.235x203}} " class="img-fluid" alt="" >
+								<div class="ser-tx">
+										<h4>ആയുർവ്വേദചികിത്സ</h4>
+										<p><small> അമ്മയ്ക്കും കുട്ടിക്കും ആയുർവ്വേദ, അങ്ങാടി മരുന്നുകളും ലേഹ്യങ്ങളും അരിഷ്ടവും അടങ്ങിയ ചികിത്സ </small></p>
+										
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12">						
+                        <div class="ser-bx mb-30">
+							<div class="d-md-flex d-block">
+								<img src=" {{ i.food_img.crop.235x203}} " class="img-fluid" alt="" >
+								<div class="ser-tx">
+									<h4>പോഷകാഹാരം</h4>
+									<p><small>പോഷാകാഹാരങ്ങളോടു കൂടിയ Veg / Non Veg ഭക്ഷണം </small></p><br>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12">						
+                        <div class="ser-bx mb-30">
+							<div class="d-md-flex d-block">
+								<img src=" {{ i.package_img.crop.235x203 }} " class="img-fluid" alt="" >
+								<div class="ser-tx">
+									<h4>പ്രത്യേക പാക്കേജുകൾ</h4>
+									<p><small>40, 30, 21 ദിവസത്തെ പ്രത്യേക പാക്കേജുകൾ</small></p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12">						
+                        <div class="ser-bx mb-30">
+							<div class="d-md-flex d-block">
+								<img src=" {{ i.consulting_img.crop.235x203}} " class="img-fluid" alt="" >
+								<div class="ser-tx">
+									<h4>പ്രത്യേക പരിഗണന</h4>
+									<p><small>ബൈ സ്റ്റാൻഡേർ ഇല്ലാത്തവർക്ക് പ്രത്യേക പരിഗണന</small></p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12">						
+                        <div class="ser-bx mb-30">
+							<div class="d-md-flex d-block">
+								<img src=" {{i.bistander_img.crop.235x203 }} " class="img-fluid" alt="" >
+								<div class="ser-tx">
+									<h4>ബൈ സ്റ്റാൻഡേർ</h4>
+									<p><small>അമ്മയുടെ കൂടെ നിൽക്കുന്ന ഒരാളുടെ  ഭക്ഷണവും ഈ പാക്കേജിൽ ഉൾപ്പെടുന്നു.</small></p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12">						
+                        <div class="ser-bx mb-30">
+							<div class="d-md-flex d-block">
+								<img src=" {{i.appartment_img.crop.235x203 }} " class="img-fluid" alt="" >
+								<div class="ser-tx">
+									<h4>അപ്പാർട്ടുമെൻറ്റുകൾ</h4>
+									<p><small>എല്ലാ സൗകര്യങ്ങളോടുകൂടിയ 2 BHK (Bedroom, Hall and Kitchen) A/c Non A/c അപ്പാർട്ടുമെൻറ്റുകൾ  </small></p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+            </div>
+        </section>
+		
+		<section class="section-ptb-150 sm-pt-50 sm-pb-50 parallax" data-jarallax='{"speed": 0.1}' style="background-image: url( {% static 'images/about-bg2.jpg' %} );">
+            <div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-12">
+						<div class="section-heading">
+							<h1 class="heading fs-60 f-w7 theme-color">പ്രസവാനന്തര ശുശ്രൂഷ എന്തിന്​​?</h1>
+							<p> ആ​യു​ർ​വേ​ദ ചി​കി​ത്സ​യി​ലെ ഏ​റ്റ​വും ജ​ന​കീ​യ​മാ​യ ഒ​രു ചി​കി​ത്സ​യാ​ണ്​ പ്ര​സ​വാ​ന​ന്ത​ര ശു​ശ്രൂ​ഷ.എ​ന്നാ​ൽ, ഈ ​ആ​ധു​നി​ക കാ​ല​ഘ​ട്ട​ത്തി​ൽ ഇ​തിൻറെ പ്ര​സ​ക്​​തി​യെ​ക്കു​റി​ച്ച്​ കു​റ​ച്ചു​പേ​ർ​ക്കെ​ങ്കി​ലും സം​ശ​യം ഉ​ണ്ടാ​കും. എ​ന്താ​ണ്, എ​ന്തി​നാ​ണ്​ പ്ര​സവാ​ന​ന്ത​ര ശു​ശ്രൂ​ഷ.</p>
+							<a class="cs-button mt-30" href="{% url 'Learn' %}">Learn More</a>
+						</div>
+					</div>
+				</div>                
+            </div>
+        </section>
+		
+		<section class="section-ptb-80 bg-light">
+            <div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="section-heading text-center">
+							<h2 class="heading">ഞങ്ങളുടെ നൽകുന്ന പ്രേത്യേക പാക്കേജുകൾ</h2>
+						</div>
+					</div>
+				</div> 
+				<div class="row mt-50">
+					<div class="col-md-4 col-12">
+						<div class="content-1 mb-30">
+                            <div class="content-1-image mb-30">
+                                <img alt="" src=" {{i.recommend1_img.crop.350x170 }} " class="img-fluid">
+                            </div>
+                            <div class="content-1-info text-center">
+                                <h4 class="text-back f-w6 theme-color">40 DAYS PACKAGE</h4>
+                                <p>താമസം, ഭക്ഷണം, വൈദ്യസഹായം കൂടാതെ അമ്മയുടെയും കുഞ്ഞിൻ്റെയും പരിപൂർണ്ണ പരിപാലനവും അടങ്ങുന്ന 40 ദിവസത്തെ പ്രസവാനന്തര ചികിത്സ പാക്കേജ് ഇപ്പോൾ  വെറും <b>60000</b> രൂപയ്‌ക്ക് സ്വന്തമാക്കാം MOM'S LAPൽ നിന്നും.</p>
+							</div>
+                        </div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="content-1 mb-30">
+                            <div class="content-1-image mb-30">
+                                <img alt="" src=" {{i.recommend2_img.crop.350x170 }} " class="img-fluid">
+                            </div>
+                            <div class="content-1-info text-center">
+                                <h4 class="text-back f-w6 theme-color">30 DAYS PACKAGE</h4>
+                                <p>താമസം, ഭക്ഷണം, വൈദ്യസഹായം കൂടാതെ അമ്മയുടെയും കുഞ്ഞിൻ്റെയും പരിപൂർണ്ണ പരിപാലനവും  അടങ്ങുന്ന 30 ദിവസത്തെ പ്രസവാനന്തര ചികിത്സ പാക്കേജ് ഇപ്പോൾ  വെറും <b>45000</b> രൂപയ്‌ക്ക് സ്വന്തമാക്കാം MOM'S LAPൽ നിന്നും.</p>
+							 </div>
+                        </div>
+					</div>
+					<div class="col-md-4 col-12">
+						<div class="content-1 mb-30">
+                            <div class="content-1-image mb-30">
+                                <img alt="" src=" {{i.recommend3_img.crop.350x170 }} " class="img-fluid">
+                            </div>
+                            <div class="content-1-info text-center">
+                                <h4 class="text-back f-w6 theme-color">21 DAYS PACKAGE</h4>
+                                <p>താമസം, ഭക്ഷണം, വൈദ്യസഹായം കൂടാതെ അമ്മയുടെയും കുഞ്ഞിൻ്റെയും പരിപൂർണ്ണ പരിപാലനവും  അടങ്ങുന്ന 21 ദിവസത്തെ പ്രസവാനന്തര ചികിത്സ പാക്കേജ് ഇപ്പോൾ  വെറും <b>30000</b> രൂപയ്‌ക്ക് സ്വന്തമാക്കാം MOM'S LAPൽ നിന്നും.</p>
+							</div>
+                        </div>
+					</div>
+				</div>
+            </div>
+        </section>
+		
+		
+		<section class="section-ptb-0 bg-light">
+			<div class="row align-items-center no-gutter">
+				<div class="col-lg-6 col-12">
+					<div class="px-100 xs-px-20 sm-py-50">
+						<div class="section-heading text-left max-width-650 mb-30">
+							<h2 class="heading">DELUX സൗകര്യങ്ങൾക്കായി ഇപ്പോൾത്തന്നെ VIP പാക്കേജ് ബുക്ക് ചെയ്യൂ </h2>
+						</div>
+						<p class="max-width-700 mb-20">നിങ്ങൾ ഡീലക്സ് സൗകര്യങ്ങൾക്കും പ്രീമിയം ലിവിംഗ് റൂമുകളുമാണ്  തിരയുന്നതെങ്കിൽ  ഉടൻ തന്നെ  MOM'S LAP-ൻ്റെ വി.ഐ.പി പാക്കേജ് ബുക്ക് ചെയ്യൂ. കൂടുതൽ സൗകര്യങ്ങൾക്കും ഡീലക്സ് സൗകര്യങ്ങൾക്കും പ്രീമിയം ലിവിംഗ് റൂമുകളുമാണ്  തിരയുന്നതെങ്കിൽ  ഉടൻ തന്നെ  MOM'S LAP-ൻ്റെ വി.ഐ.പി പാക്കേജ് ബുക്ക് ചെയ്യൂ.</p>
+						
+						<ul class="list list-hand">
+                            <li> Well equipped living rooms</li>
+                            <li> Air Conditioning facility</li>
+                            <li> Fridge and Washing machine for your convenience</li>
+                            <li> Deluxe rooms</li>
+                            <li> +15000 with every packages</li>
+
+                        </ul>
+						
+					
+					</div>
+				</div>
+				<div class="col-lg-6 col-12">
+					<div class="portfolio-item video">
+						<img src=" {{i.helping_img.crop.675x562}} " class="img-fluid" alt="">
+                    </div>
+				</div>
+			</div>
+        </section>
+		
+		<section class="section-pb-150 pt-80 sm-pb-50 exp-bg" style="background-image: url( {% static 'images/bg-img4.png' %} ); background-position: center bottom;">
+            <div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8 col-12">
+						<div class="section-heading text-center">
+							<h2 class="heading">ആരോഗ്യം MOM'S LAP ലൂടെ </h2>
+							<p>വർഷങ്ങളുടെ സേവന പാര്യമ്പര്യമുള്ള MOM'S LAP ഇപ്പോൾ മലപ്പുറത്തും പ്രവർത്തനമാരംഭിച്ചിരിക്കുന്നു. പ്രസവാനന്തര ചികിത്സകൾ ഇപ്പോൾ ഉയർന്ന നിലവാരത്തോടെ കുറഞ്ഞ നിരക്കിൽ.</p>
+						</div>
+					</div>
+				</div>
+                <div class="row mt-80 sm-mt-50 sm-pb-50 xs-pb-0">					
+                    <div class="col-lg-3 col-sm-6 col-xs-6 sm-mb-30 text-center">
+                        <div class="counter left-icon">
+                            <i class="fa fa-user theme-color" aria-hidden="true"></i>
+                            <label>YEARS OF PRACTICE</label>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-3 col-sm-6 col-xs-6 sm-mb-30 text-center">
+                        <div class="counter left-icon">
+                            <i class="fa fa-user-md theme-color" aria-hidden="true"></i>
+                            <label>QUALIFIED DOCTORS</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-xs-6 sm-mb-30 text-center">
+                        <div class="counter left-icon">
+                        <i class="fa fa-pie-chart theme-color" aria-hidden="true"></i>
+                            <label>VARIETY SERVICES</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-xs-6 sm-mb-30 text-center">
+                        <div class="counter left-icon">
+                            <i class="fa fa-heartbeat theme-color" aria-hidden="true"></i>
+                            <label>FREIDLY WORKS</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+		<section class="section-ptb-80">
+
+        </section>
+		
+		<section id="testimonials" class="section-ptb-80" data-jarallax='{"speed": 0.0}' style="background-image: url('images/about-bg.jpg);">
+            <div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-8">
+						<div class="section-heading text-center">
+							<h2 class="heading">Your dream - Our mission</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-50 justify-content-center">
+					<div class="col-lg-8 col-12">
+                        <div class="owl-carousel owl-theme" data-nav-dots="true"  data-items="1" data-md-items="1" data-sm-items="1" data-xs-items="1" data-xx-items="1">
+                            <div class="item">
+                                <div class="testimonials">
+                                  <div class="testimonials-avatar"> <img alt="" src=" {% static 'images/testimonials/avtar-1.jpg' %} "> </div>
+                                  <div class="testimonials-info"> {{i.testimonial.name}}</div>
+                                  <div class="author-info"> <strong>{{i.testimonial.review}}</strong> </div>
+                                </div>
+                            </div>
+							<div class="item">
+                                <div class="testimonials">
+                                  <div class="testimonials-avatar"> <img alt="" src="{% static 'images/testimonials/avtar-1.jpg' %}"> </div>
+                                  <div class="testimonials-info"> {{i.testimonial.name}}</div>
+                                  <div class="author-info"> <strong>{{i.testimonial.review}}</strong> </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonials">
+                                  <div class="testimonials-avatar"> <img alt="" src="{% static 'images/testimonials/avtar-1.jpg' %}"> </div>
+                                  <div class="testimonials-info"> {{i.testimonial.name}}</div>
+                                  <div class="author-info"> <strong>{{i.testimonial.review}}</strong> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+		<section id="doctor" class="section-ptb-80">
+            <div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="section-heading text-center max-width-550 mx-auto">
+							<h2 class="heading">Our Specialised Team</h2>
+							<!-- <p>A small river name Duden flows by their place es supplies with the necessary regelialia esser paradisematic country.</p> -->
+						</div>
+					</div>
+				</div>
+				<div class="row mt-50">
+                    <div class="col-lg-3 col-md-6 col-12 sm-mb-30">
+                        <div class="team team-round-shadow">
+                            <div class="team-description">
+                                <div class="team-info">
+                                    <h5><a href="team-single.html"> Dr. Laura Dixon</a></h5>
+                                </div>
+                                <div class="team-contact">
+                                    <p class="fs-12 mb-10"> GYNECOLOGIST </p>
+                                </div>
+								<div class="team-photo">
+									<img class="img-fluid mx-auto" src=" {% static 'images/team/team-0.jpg' %} " alt="">
+								</div>
+                                <div class="social-icons social-border rounded color-hover clearfix">
+                                    <ul>
+                                        <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="social-instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 sm-mb-30">
+                        <div class="team team-round-shadow">
+                            <div class="team-description">
+                                <div class="team-info">
+                                    <h5><a href="team-single.html"> Druid Wensleydale</a></h5>
+                                </div>
+                                <div class="team-contact">
+                                    <p class="fs-12 mb-10"> PEDIATRICIAN </p>
+                                </div>
+								<div class="team-photo">
+									<img class="img-fluid mx-auto" src=" {% static 'images/team/team-1.jpg' %} " alt="">
+								</div>
+                                <div class="social-icons social-border rounded color-hover clearfix">
+                                    <ul>
+                                        <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="social-instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="col-lg-3 col-md-6 col-12 sm-mb-30">
+                        <div class="team team-round-shadow">
+                            <div class="team-description">
+                                <div class="team-info">
+                                    <h5><a href="team-single.html"> Phillip Anthropy</a></h5>
+                                </div>
+                                <div class="team-contact">
+                                    <p class="fs-12 mb-10"> PEDIATRICIAN </p>
+                                </div>
+								<div class="team-photo">
+									<img class="img-fluid mx-auto" src=" {% static 'images/team/team-2.jpg' %} " alt="">
+								</div>
+                                <div class="social-icons social-border rounded color-hover clearfix">
+                                    <ul>
+                                        <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="social-instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>               
+                    <div class="col-lg-3 col-md-6 col-12 sm-mb-30">
+                        <div class="team team-round-shadow">
+                            <div class="team-description">
+                                <div class="team-info">
+                                    <h5><a href="team-single.html"> Jack Jameson</a></h5>
+                                </div>
+                                <div class="team-contact">
+                                    <p class="fs-12 mb-10"> GYNECOLOGIST </p>
+                                </div>
+								<div class="team-photo">
+									<img class="img-fluid mx-auto" src=" {% static 'images/team/team-3.jpg' %} " alt="">
+								</div>
+                                <div class="social-icons social-border rounded color-hover clearfix">
+                                    <ul>
+                                        <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="social-instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+		<!-- <section class="section-ptb-80 bg-blue">
+            <div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="section-heading text-center max-width-550 mx-auto">
+							<h2 class="heading">Insurance Partners</h2>
+							<p>A small river name Duden flows by their place es supplies with the necessary regelialia esser paradisematic country.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-50">
+					<div class="col-12">
+			          	<div class="client clients-border column-5 text-center">
+			             	<ul class="list-unstyled">
+			               	   <li> 
+				                  <img class="img-fluid mx-auto" src=" {% static 'images/logo-1.png' %} " alt="">
+				               </li>
+				               <li> 
+				                  <img class="img-fluid mx-auto" src=" {% static 'images/logo-2.png' %} " alt="">
+				               </li>
+				               <li> 
+				                  <img class="img-fluid mx-auto" src=" {% static 'images/logo-3.png' %} " alt="">
+				               </li>
+				               <li> 
+				                  <img class="img-fluid mx-auto" src=" {% static 'images/logo-4.png' %} " alt="">
+				               </li>
+				               <li> 
+				                  <img class="img-fluid mx-auto" src=" {% static 'images/logo-5.png' %} " alt="">
+				               </li>
+				               <li> 
+				                  <img class="img-fluid mx-auto" src=" {% static 'images/logo-6.png' %} " alt="">
+				               </li>
+				               <li> 
+				                  <img class="img-fluid mx-auto" src=" {% static 'images/logo-1.png' %} " alt="">
+				               </li>
+				               <li> 
+				                  <img class="img-fluid mx-auto" src=" {% static 'images/logo-2.png' %} " alt="">
+				               </li>
+				               <li> 
+				                  <img class="img-fluid mx-auto" src=" {% static 'images/logo-3.png' %} " alt="">
+				               </li>
+				               <li> 
+				                  <img class="img-fluid mx-auto" src=" {% static 'images/logo-4.png' %} " alt="">
+				               </li>
+				            </ul>
+			          	</div>
+			        </div>
+
+                </div>
+            </div>
+        </section> -->
+		
+        <!-- <section id="blog" class="section-ptb-80 parallax" data-jarallax='{"speed": 0.1}' style="background-image: url(images/app-bg.jpg);">
+            <div class="container">
+				<div class="row justify-content-end">
+					<div class="col-md-7 col-12">
+						<div class="section-heading">
+							<h2 class="heading">Latest News & Events</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-30 justify-content-end">
+					<div class="col-md-7 col-12">
+                        <div class="blog-bx d-flex mb-30">
+							<div class="data-bx">
+								<h3 class="fs-36 f-w7 mb-0">25</h3>
+								<p>MARCH</p>
+							</div>
+							<div class="cont-bx">
+								<h4 class="fs-18 f-w6 mb-0">Ferasoetayse setraseas aturaus buytase</h4>
+								<p>Cinsquntuagni dolores uiration lertyas voluptat seqse niptaiadkeu voleytaser lasec.</p>
+								<a href="#" class="sr-link">Read More</a>
+							</div>
+						</div>
+                        <div class="blog-bx d-flex mb-30">
+							<div class="data-bx">
+								<h3 class="fs-36 f-w7 mb-0">24</h3>
+								<p>MARCH</p>
+							</div>
+							<div class="cont-bx">
+								<h4 class="fs-18 f-w6 mb-0">Doleuyras kerturaus fuytseas asemigsa</h4>
+								<p>Cinsquntuagni dolores uiration lertyas voluptat seqse niptaiadkeu voleytaser lasec.</p>
+								<a href="#" class="sr-link">Read More</a>
+							</div>
+						</div>
+                        <div class="blog-bx d-flex mb-30">
+							<div class="data-bx">
+								<h3 class="fs-36 f-w7 mb-0">23</h3>
+								<p>MARCH</p>
+							</div>
+							<div class="cont-bx">
+								<h4 class="fs-18 f-w6 mb-0">Setraseas aturaus buytase</h4>
+								<p>Cinsquntuagni dolores uiration lertyas voluptat seqse niptaiadkeu voleytaser lasec.</p>
+								<a href="#" class="sr-link">Read More</a>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+				
+		<section id="contactus" class="section-ptb-0 bg-overlay-white-50" data-jarallax='{"speed": 0.0}' style="background-image: url(images/bg-img3.jpg);">
+			<div class="row no-gutters align-items-center">
+				<div class="col-lg-12">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7828.328036686958!2d75.9939737121643!3d11.175488979903824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf907fe1550ef2a1!2zMTHCsDEwJzM1LjAiTiA3NcKwNTknNDAuNyJF!5e0!3m2!1sen!2sin!4v1653890672199!5m2!1sen!2sin" width="1350" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+        </section>		
+		
+        <section class="actionbox2 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="actionbox2 actionbox-res actionbox-border text-center">
+                            <h3>For any Queries or assistance please call:<br> <strong> <span class="fa fa-phone"></span> +91-7594999200</strong></h3>
+							<!-- <h2 class="f-w6 my-10">Ask Alexa!</h2> -->
+							<!-- <a href="https://api.whatsapp.com/send?phone=7593999 200&text=Hello this is the starting message"><i class="fa-brands fa-whatsapp fa-2xl"></i></a> -->
+							<h3>email: momslap969@gmail.com</h3>
+                        </div>
+                    </div>
+                </div>
+			
+            </div>
+        </section>
+	{% endfor %}
+		
+    </body>
+    
+    <!-- jQuery -->
+    <script src=" {% static 'vendor/jquery/jquery.min.js' %} "></script>
+
+    <!-- Popper -->
+    <script src=" {% static 'vendor/js/popper.min.js' %} "></script>
+
+    <!-- bootstrap Core JavaScript -->
+    <script src=" {% static 'vendor/bootstrap/js/bootstrap.min.js' %} "></script>
+    
+    <!-- Corenav Master JavaScript -->
+    <script src=" {% static 'vendor/corenav-master/coreNavigation-1.1.3.js' %} "></script>
+    <script src=" {% static 'js/nav.js' %} "></script>
+
+    <!--carousel script -->
+    <script src=" {% static 'vendor/owlcarousel/js/owl.carousel.min.js' %} "></script>
+    <script src=" {% static 'vendor/owlcarousel/js/jquery.mousewheel.min.js' %} "></script>
+
+    <!-- nice-select -->
+    <script src=" {% static 'vendor/jquery-nice-select/jquery-nice-select.js' %} "></script>
+
+    <!-- custom JavaScript -->
+    <script src=" {% static 'js/custom.js' %} "></script>
+
+    <!-- prettyPhoto -->
+    <script src=" {% static 'vendor/prettyPhoto/js/jquery.prettyPhoto.js' %} "></script>
+
+    <!-- custom JavaScript -->
+    <script src=" {% static 'js/customizer.js' %} "></script>
+	
+	<!-- template JavaScript -->
+    <script src=" {% static 'js/template.js' %} "></script>
+    
+    <!-- REVOLUTION JS FILES -->
+	<script type="text/javascript" src=" {% static 'vendor/revolution-slider/revolution/js/jquery.themepunch.tools.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/revolution-slider/revolution/js/jquery.themepunch.revolution.min.js' %} "></script>
+
+	<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->	
+	<script type="text/javascript" src=" {% static 'vendor/revolution-slider/revolution/js/extensions/revolution.extension.actions.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/revolution-slider/revolution/js/extensions/revolution.extension.carousel.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/revolution-slider/revolution/js/extensions/revolution.extension.kenburn.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/revolution-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/revolution-slider/revolution/js/extensions/revolution.extension.migration.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/revolution-slider/revolution/js/extensions/revolution.extension.navigation.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/revolution-slider/revolution/js/extensions/revolution.extension.slideanims.min.js' %} "></script>
+	<script type="text/javascript" src=" {% static 'vendor/revolution-slider/revolution/js/extensions/revolution.extension.video.min.js' %} "></script>
+    <script src=" {% static 'js/revolution-slider.js' %} " type="text/javascript"></script>
+    
+    <!--jarallax javascript -->
+    <script src=" {% static 'js/jarallax.js' %} "></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    
+	
+	{% endblock %}
+<!-- Mirrored from html.multipurposethemes.com/pregnancy/pregnancy-five/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 26 May 2022 10:36:49 GMT -->
+</html>

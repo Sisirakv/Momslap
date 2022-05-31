@@ -1,0 +1,231 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+
+{% block content %}
+<head>
+	
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>Contact Us — Mom's Lap</title>
+
+	<link rel="apple-touch-icon" sizes="180x180" href=" {% static 'assets/img/fav/apple-touch-icon.png' %} ">
+	<link rel="icon" type="image/png" sizes="32x32" href=" {% static 'assets/img/fav/favicon-32x32.png' %} ">
+	<link rel="icon" type="image/png" sizes="16x16" href=" {% static 'assets/img/fav/favicon-16x16.png' %} ">
+	<link rel="mask-icon" href=" {% static 'assets/img/fav/safari-pinned-tab.svg' %} " color="#fa7070">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">     
+
+
+	<meta name="msapplication-TileColor" content="#fa7070">
+	<meta name="theme-color" content="#fa7070">
+
+	<link rel="stylesheet" href=" {% static 'assets/dependencies/fontawesome/css/all.min.css' %} " type="text/css">
+	<link rel="stylesheet" href=" {% static 'assets/dependencies/swiper/css/swiper.min.css' %} " type="text/css">
+	<link rel="stylesheet" href=" {% static 'assets/dependencies/wow/css/animate.css' %} " type="text/css">
+	<link rel="stylesheet" href=" {% static 'assets/dependencies/magnific-popup/css/magnific-popup.css' %} " type="text/css">
+	<link rel="stylesheet" href=" {% static 'assets/dependencies/components-elegant-icons/css/elegant-icons.min.css' %} " type="text/css">
+	<link rel="stylesheet" href=" {% static 'assets/dependencies/simple-line-icons/css/simple-line-icons.css' %} " type="text/css">
+
+	<link rel="stylesheet" href=" {% static 'assets/css/app.css' %} " type="text/css">
+
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&amp;family=Satisfy&amp;display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body id="home-version-1" class="home-version-1" data-style="default">
+
+	<a href="#main_content" data-type="section-switch" class="return-to-top">
+		<i class="fa fa-chevron-up"></i>
+	</a>
+
+	<div class="page-loader">
+		<div class="loader">
+		
+			<div class="blobs">
+				<div class="blob-center"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+				<defs>
+					<filter id="goo">
+						<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+						<feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+						<feBlend in="SourceGraphic" in2="goo" />
+					</filter>
+				</defs>
+			</svg>
+
+		</div>
+	</div>
+
+	<div id="main_content">
+		<section class="page-banner-contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8">
+						<div class="page-title-wrapper">
+							<div class="page-title-inner">
+								<h1 class="page-title">Get in touch with Us</h1>
+
+								<p>
+									Why I say old chap that is spiffing, young delinquent in my flat bloke<br>
+									buggered what a plonker.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="animate-element-contact">
+							<img src=" {% static 'assets/media/animated/001.png' %} " alt="" class="wow pixFadeDown" data-wow-duration="1s">
+							<img src=" {% static 'assets/media/animated/002.png' %} " alt="" class="wow pixFadeUp" data-wow-duration="2s">
+							<img src=" {% static 'assets/media/animated/003.png' %} " alt="" class="wow pixFadeLeft" data-wow-delay="0.3s" data-wow-duration="2s">
+							<img src=" {% static 'assets/media/animated/004.png' %} " alt="man" class="wow pixFadeUp" data-wow-duration="2s">
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<svg class="circle" data-parallax='{"y" : 250}' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="950px" height="950px">
+				<path fill-rule="evenodd" stroke="rgb(250, 112, 112)" stroke-width="100px" stroke-linecap="butt" stroke-linejoin="miter" opacity="0.051" fill="none" d="M450.000,50.000 C670.914,50.000 850.000,229.086 850.000,450.000 C850.000,670.914 670.914,850.000 450.000,850.000 C229.086,850.000 50.000,670.914 50.000,450.000 C50.000,229.086 229.086,50.000 450.000,50.000 Z" />
+			</svg>
+
+			<ul class="animate-ball">
+				<li class="ball"></li>
+				<li class="ball"></li>
+				<li class="ball"></li>
+				<li class="ball"></li>
+				<li class="ball"></li>
+			</ul>
+		</section>
+		<section class="contactus">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-1">
+
+					</div>
+					<div class="col-md-5">
+						<div class="contact-infos">
+							<div class="contact-info">
+								<h3 class="title">Our Location</h3>
+								<p class="description">
+									<p>Chenganeeri, Kizhisseri, Kuzhimanna (P.O) </p>
+										<p>Malappuram, Kerala, India </p>
+								</p>
+
+								<div class="info phone">
+									<i class="ei ei-icon_phone"></i>
+									<span>+91-7593999200</span>
+								</div>
+								<div class="info phone">
+									<i class="ei ei-icon_phone"></i>
+									<span>+91-7594999200</span>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-md-1">
+
+					</div>
+					<div class="col-md-5">
+						<div class="contact-infos">
+							<div class="contact-info">
+								<h3 class="title">Say Hello</h3>
+								<div class="info">
+									<i class="ei ei-icon_mail_alt"></i>
+									<span>momslap969@gmail.com</span>
+								</div><br>
+							<a href="https://api.whatsapp.com/send?phone=7593999 200&text=Hello this is the starting message" class="text-secondary"><i class="fa-brands fa-whatsapp fa-lg text-secondary"></i> 7593999 200</a>
+							<br><a href="https://api.whatsapp.com/send?phone=7593999 200&text=Hello this is the starting message" class="text-secondary"><i class="fa-brands fa-whatsapp fa-lg text-secondary"></i> 7593999 200</a>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<br><br>
+				<div class="row">
+					<div class="col-md-2">
+
+					</div>
+					<div class="col-md-8">
+						<div class="contact-froms">
+							<form method="post" class="bootstrap4">{% csrf_token %}
+								<div class="row">
+									<h4 class="ml-4 col-12"></h4> <br>
+									<br><br>
+									<div class="col-md-6">
+										{{forms.name}}
+									</div>
+
+									<div class="col-md-6">
+										{{forms.email}}
+									</div>
+								</div>
+								{{forms.Review}}
+								
+								<button type="submit" class="pix-btn submit-btn">
+									<span class="btn-text">Send Your Massage</span>
+								</button>
+								<input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+								
+							</form>
+							{{ form}}
+						</div>
+					
+					</div>
+					<div class="col-md-2">
+						
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contactus" class="section-ptb-0 bg-overlay-white-50" data-jarallax='{"speed": 0.0}' style="background-image: url(images/bg-img3.jpg);">
+			<div class="row no-gutters align-items-center">
+				<div class="col-lg-12">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7828.328036686958!2d75.9939737121643!3d11.175488979903824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf907fe1550ef2a1!2zMTHCsDEwJzM1LjAiTiA3NcKwNTknNDAuNyJF!5e0!3m2!1sen!2sin!4v1653890672199!5m2!1sen!2sin" width="1350" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+        </section>
+
+	</div>
+
+	<script src=" {% static 'assets/dependencies/jquery/jquery.min.js' %} "></script>
+	<script src=" {% static 'assets/dependencies/bootstrap/js/bootstrap.min.js' %} "></script>
+	<script src=" {% static 'assets/dependencies/swiper/js/swiper.min.js' %} "></script>
+	<script src=" {% static 'assets/dependencies/jquery.appear/jquery.appear.js' %} "></script>
+	<script src=" {% static 'assets/dependencies/wow/js/wow.min.js' %} "></script>
+	<script src=" {% static 'assets/dependencies/countUp.js/countUp.min.js' %} "></script>
+	<script src=" {% static 'assets/dependencies/isotope-layout/isotope.pkgd.min.js' %} "></script>
+	<script src=" {% static 'assets/dependencies/imagesloaded/imagesloaded.pkgd.min.js' %} "></script>
+	<script src=" {% static 'assets/dependencies/jquery.parallax-scroll/js/jquery.parallax-scroll.js' %} "></script>
+	<script src=" {% static 'assets/dependencies/magnific-popup/js/jquery.magnific-popup.min.js' %} "></script>
+	<script src=" {% static 'assets/dependencies/gmap3/js/gmap3.min.js' %} "></script>
+	<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDk2HrmqE4sWSei0XdKGbOMOHN3Mm2Bf-M&amp;ver=2.1.6'></script>
+
+
+
+	<script src=" {% static 'assets/js/header.js' %} "></script>
+	<script src=" {% static 'assets/js/app.js' %} "></script>
+
+</body>
+
+{% endblock %}
+
+</html>

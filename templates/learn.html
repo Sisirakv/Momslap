@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+
+<head>
+	<!-- Meta Data -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>Specialities — Mom's Lap</title>
+
+	<link rel="apple-touch-icon" sizes="180x180" href=" {% static 'assets/img/fav/apple-touch-icon.png' %} ">
+	<link rel="icon" type="image/png" sizes="32x32" href=" {% static 'assets/img/fav/favicon-32x32.png' %} ">
+	<link rel="icon" type="image/png" sizes="16x16" href=" {% static 'assets/img/fav/favicon-16x16.png' %} ">
+	<link rel="mask-icon" href=" {% static 'assets/img/fav/safari-pinned-tab.svg' %} " color="#fa7070">
+
+	<meta name="msapplication-TileColor" content="#fa7070">
+	<meta name="theme-color" content="#fa7070">
+
+	<!-- Dependency Styles -->
+	<!-- <link rel="stylesheet" href=" {% static 'assets/dependencies/bootstrap/css/bootstrap.min.css' %} " type="text/css"> -->
+	<link rel="stylesheet" href=" {% static 'assets/dependencies/fontawesome/css/all.min.css' %} " type="text/css">
+	<link rel="stylesheet" href=" {% static 'assets/dependencies/swiper/css/swiper.min.css' %} " type="text/css">
+	<link rel="stylesheet" href=" {% static 'assets/dependencies/wow/css/animate.css' %} " type="text/css">
+	<link rel="stylesheet" href=" {% static 'assets/dependencies/magnific-popup/css/magnific-popup.css' %} " type="text/css">
+	<link rel="stylesheet" href=" {% static 'assets/dependencies/components-elegant-icons/css/elegant-icons.min.css' %} " type="text/css">
+	<link rel="stylesheet" href=" {% static 'assets/dependencies/simple-line-icons/css/simple-line-icons.css' %} " type="text/css">
+
+
+
+	<!-- Site Stylesheet -->
+	<link rel="stylesheet" href=" {% static 'assets/css/app.css' %} " type="text/css">
+
+	<!-- Google Web Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&amp;family=Satisfy&amp;display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body id="home-version-1" class="home-version-1" data-style="default">
+
+	<a href="#main_content" data-type="section-switch" class="return-to-top">
+		<i class="fa fa-chevron-up"></i>
+	</a>
+
+	<div class="page-loader">
+		<div class="loader">
+			<!-- Loader -->
+			<div class="blobs">
+				<div class="blob-center"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+				<defs>
+					<filter id="goo">
+						<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+						<feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+						<feBlend in="SourceGraphic" in2="goo" />
+					</filter>
+				</defs>
+			</svg>
+
+		</div>
+	</div><!-- /.page-loader -->
+
+	<div id="main_content">
+		<section class="page-banner">
+			<div class="container">
+				<div class="page-title-wrapper">
+					<h1 class="page-title">For your knowledge</h1>
+				</div>
+				<!-- /.page-title-wrapper -->
+			</div>
+			<!-- /.container -->
+
+			<svg class="circle" data-parallax='{"x" : -200}' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="950px" height="950px">
+				<path fill-rule="evenodd" stroke="rgb(250, 112, 112)" stroke-width="100px" stroke-linecap="butt" stroke-linejoin="miter" opacity="0.051" fill="none" d="M450.000,50.000 C670.914,50.000 850.000,229.086 850.000,450.000 C850.000,670.914 670.914,850.000 450.000,850.000 C229.086,850.000 50.000,670.914 50.000,450.000 C50.000,229.086 229.086,50.000 450.000,50.000 Z" />
+			</svg>
+
+			<ul class="animate-ball">
+				<li class="ball"></li>
+				<li class="ball"></li>
+				<li class="ball"></li>
+				<li class="ball"></li>
+				<li class="ball"></li>
+			</ul>
+		</section>
+		<!-- /.page-banner -->
+
+		<!--=============================-->
+		<!--=         Portfolio         =-->
+		<!--=============================-->
+		<section class="portfolio-single">
+			<div class="container">
+				<div class="portfolio-single-wrapper">
+					<div class="port-header">
+						<!-- <div class="portfolio-title"> -->
+							<h2 class="title"><b>
+								പ്രസവാനന്തര ശുശ്രൂഷ എന്തിന്​​?
+							</b></h2>
+						</div>
+
+						<!-- <div class="share-link">
+							<span class="share">Share:</span>
+							<ul class="footer-social-link">
+								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+								<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+							</ul>
+						</div> -->
+						<!-- /.share-link -->
+					</div>
+					<!-- /.port-header -->
+
+					<div class="portfolio-content">
+						<div class="feature-image">
+							<img src=" {% static 'assets/media/portfolio/30.jpg' %} " alt="portfolio">
+						</div>
+						<!-- /.feature-image -->
+
+						<div class="row">
+							<div class="col-md-12">
+								<div class="content-inner">
+
+									<p style="text-align:justify;">
+										Twit what a plonker tinkety tonk old fruit Harry gutted mate cheers vagabond cobblers blimey bog-standard, do one golly gosh horse play I don't want no agro nancy boy William gormless lemon squeezy argy-bargy, wellies the bee's knees in my flat morish a load of old tosh naff I hunky-dory. Tinkety tonk old fruit so I said arse over tit chinwag bite your arm off don't get shirty with me such a fibber gosh he nicked it, it's your round pukka lost the plot porkies chancer the bee's knees on your bike mate wind up, bleeding bits and bobs owt to do with me brolly bamboozled up the duff Richard. Skive off arse over tit show off show off pick your nose and blow off vagabond haggle knees up up the kyver
+									</p>
+								</div>
+								<!-- /.content-inner -->
+							</div>
+							</div>
+							<!-- /.col-md-4 -->
+						</div>
+						<!-- /.row -->
+					</div>
+					<!-- /.portfolio-content -->
+				</div>
+				<!-- /.portfolio-single-wrapper -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.portfolio-single -->
+
+
+
+
+	</div><!-- /#site -->
+
+	<!-- Dependency Scripts -->
+	<script src=" {% static 'assets/dependencies/jquery/jquery.min.js' %} "></script>
+	<script src=" {% static 'assets/dependencies/bootstrap/js/bootstrap.min.js' %} "></script>
+	<script src=" {% static 'assets/dependencies/swiper/js/swiper.min.js' %} "></script>
+	<script src=" {% static 'assets/dependencies/jquery.appear/jquery.appear.js' %} "></script>
+	<script src=" {% static 'assets/dependencies/wow/js/wow.min.js' %} "></script>
+	<script src=" {% static 'assets/dependencies/countUp.js/countUp.min.js' %} "></script>
+	<script src=" {% static 'assets/dependencies/isotope-layout/isotope.pkgd.min.js' %} "></script>
+	<script src=" {% static 'assets/dependencies/imagesloaded/imagesloaded.pkgd.min.js' %} "></script>
+	<script src=" {% static 'assets/dependencies/jquery.parallax-scroll/js/jquery.parallax-scroll.js' %} "></script>
+	<script src=" {% static 'assets/dependencies/magnific-popup/js/jquery.magnific-popup.min.js' %} "></script>
+	<script src=" {% static 'assets/dependencies/gmap3/js/gmap3.min.js' %} "></script>
+	<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDk2HrmqE4sWSei0XdKGbOMOHN3Mm2Bf-M&amp;ver=2.1.6'></script>
+
+
+	<!-- Site Scripts -->
+	<script src=" {% static 'assets/js/header.js' %} "></script>
+	<script src=" {% static 'assets/js/app.js' %} "></script>
+
+</body>
+
+{% endblock %}
+<!-- Mirrored from saaspik.pixelsigns.art/saaspik/portfolio-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 May 2022 10:01:44 GMT -->
+</html>

@@ -98,7 +98,7 @@
 								<img src="{% static 'assets/media/service/1.jpg' %} " alt="thumbnail">
 							</div>
 
-							<a href="https://www.youtube.com/watch?v=9No-FiEInLA" class="play-btn popup-video"><i class="ei ei-arrow_triangle-right"></i></a>
+							<!-- <a href="https://www.youtube.com/watch?v=9No-FiEInLA" class="play-btn popup-video"><i class="ei ei-arrow_triangle-right"></i></a> -->
 						</div>
 					</div>
 
@@ -251,32 +251,33 @@
 				</div>
 
 				<div class="row advanced-pricing-table no-gutters wow pixFadeUp" data-wow-delay="0.5s">
-
+					 
+					{% for package in package %}
 					<div class="col-lg-4">
 						<div class="pricing-table br-left">
 							<div class="pricing-header pricing-amount">
 								<div class="annual_price">
-									<h2 class="price">$0.00</h2>
+									<h2 class="price">{{ package.price }}</h2>
 								</div>
 
 								<div class="monthly_price">
-									<h2 class="price">$0.00</h2>
+									<h2 class="price">0</h2>
 								</div>
 
-								<h3 class="price-title">Basic Account</h3>
-								<p>Only for first month</p>
+								<h3 class="price-title">{{ package.plan_name }}</h3>
+								
 							</div>
 
-							<ul class="price-feture">
-								<li class="have">Limited Acess Library</li>
-								<li class="have">Single User</li>
-								<li class="have">eCommerce Store</li>
-								<li class="not">Hotline Support 24/7</li>
-								<li class="not">No Updates</li>
+							
+								<p>{{package.content|safe}}</li>
+								
 							</ul>
 						</div>
 					</div>
+					{% endfor %}
 
+
+					{% comment %}
 					<div class="col-lg-4">
 						<div class="pricing-table color-two">
 							<div class="pricing-header pricing-amount">
@@ -327,6 +328,7 @@
 							</ul>
 						</div>
 					</div>
+					{% endcomment %}
 				</div>
 			</div>
 

@@ -99,11 +99,11 @@
 
 				
 				<div class="row">
-					{% for i in data %}
+					{% for doctors in doctors %}
 					<div class="col-lg-4 col-md-6">
 						<div class="team-member wow pixFadeUp" data-wow-delay="0.3s">
 							<div class="member-avater">
-								<img src=" {{i.image_1.crop.370x390}} " alt="avater">
+								<img src=" {{doctors.image.crop.370x390}} " alt="avater">
 
 								<ul class="member-social">
 									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -113,8 +113,8 @@
 							</div>
 
 							<div class="team-info">
-								<h3 class="name">Dr. {{i.Name}}</h3>
-								<h4 class="job">{{i.Department}}</h4>
+								<h3 class="name">Dr. {{doctors.name}}</h3>
+								<h4 class="job">{{doctors.department}}</h4>
 							</div>
 						</div>
 						

@@ -1,49 +1,27 @@
 from django.db import models
 
 from versatileimagefield.fields import VersatileImageField
+from tinymce.models import HTMLField
 
 # Create your models here.
 
-class Testimonial(models.Model):
-    name = models.CharField(max_length=200)
-    review = models.TextField()
-        
-    def __str__(self):
-        return self.name,self.review
-    
-class Home(models.Model):
+class Banner(models.Model):
     banner_video = models.FileField(upload_to='videos_uploaded',null=True,)
-    banner_img = VersatileImageField(upload_to='images/Banner/')
-    ayurved_img = VersatileImageField(upload_to='images/facility/')
-    food_img = VersatileImageField(upload_to='images/facility/')
-    package_img = VersatileImageField(upload_to='images/facility/')
-    consulting_img = VersatileImageField(upload_to='images/facility/')
-    bistander_img = VersatileImageField(upload_to='images/facility/')
-    appartment_img = VersatileImageField(upload_to='images/facility/')
-    recommend1_img = VersatileImageField(upload_to='images/facility/')
-    recommend2_img = VersatileImageField(upload_to='images/facility/')
-    recommend3_img = VersatileImageField(upload_to='images/facility/')
-    helping_img = VersatileImageField(upload_to='images/facility/')
-    testimonial = models.ForeignKey(Testimonial,on_delete=models.CASCADE, related_name='testimonial')
-
-
-class About(models.Model):
-    image_1 = models.ImageField(upload_to='images_uploaded',null=True)
-    image_2 = models.ImageField(upload_to='images_uploaded',null=True)
-
-class Facilities(models.Model):
-        video_1 = models.FileField(upload_to='videos_uploaded',null=True,)
+    title = models.CharField(max_length=200)
 
 class Doctors(models.Model):
-    image_1 = VersatileImageField('Image_1',upload_to='images_1/testimagemodel_1/')
-    Name = models.CharField(max_length=200)
-    Department = models.CharField(max_length=200)
+    image = VersatileImageField('Image',upload_to='images/testimagemodel/')
+    name = models.CharField(max_length=200)
+    department = models.CharField(max_length=200)
         
     def __str__(self):
-        return self.Name
+        return self.name
 
 class Gallery(models.Model):
     image = VersatileImageField('Image',upload_to='images/testimagemodel/')
+
+    class Meta:
+        verbose_name_plural =("Gallery")
     
 class Contact(models.Model):
     name = models.CharField(max_length=200)
@@ -52,3 +30,18 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.name
+
+class Testimonial(models.Model):
+    image = VersatileImageField('Image',upload_to='images/testimagemodel/')
+    name = models.CharField(max_length=200)
+    review = models.TextField()
+        
+    def __str__(self):
+        return self.name
+
+class Package(models.Model):
+    PACKAGE_TYPE_CHOICES = (('Vip','vip'),('Normal','normal'))
+    package_type = models.CharField(max_length=200,choices=PACKAGE_TYPE_CHOICES)
+    plan_name = models.CharField(max_length=200)
+    price = models.IntegerField()
+    content = HTMLField()

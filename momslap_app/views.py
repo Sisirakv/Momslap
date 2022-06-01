@@ -2,27 +2,38 @@ from django.contrib import messages
 from django.shortcuts import redirect, render
 from .forms import reviewForm
 
-from momslap_app.models import About, Contact, Doctors, Gallery, Home, Testimonial
+from momslap_app.models import Banner, Contact, Doctors, Gallery, Testimonial, Package
 
 # Create your views here.
 
 def base(request):
     return render(request, 'base.html')
 
+
 def home(request):
-    data = Home.objects.all()
-    return render(request, 'home.html',{'data': data})
+    banner = Banner.objects.all()
+    testimonials = Testimonial.objects.all()
+    context = {
+        "testimonial" : testimonials,
+        "banner" : banner,
+
+    }
+    return render(request, 'home.html',context)
+
+
 
 def about(request):
-    data = About.objects.all()
-    return render(request, 'about.html',{'data': data})
+    return render(request, 'about.html')
 
 def service(request):
     return render(request, 'facilities.html')
 
 def team(request):
-    data = Doctors.objects.all()
-    return render(request, 'team.html', {'data':data})
+    doctors = Doctors.objects.all()
+    context = {
+        "doctors" : doctors,
+    }
+    return render(request, 'team.html', context)
 
 def learn(request):
     return render(request,'learn.html')
@@ -40,20 +51,6 @@ def testimonial(request):
     review = Testimonial.objects.all()
     return render(request, 'home.html',{'review':review})
 
-def testimonial(request):
-    forms = reviewForm(request.POST or None)
-    if request.method == "POST":
-        if forms.is_valid():
-            forms.save()
-            messages.info(request, 'Successfully added')
-            return redirect('Contact')
-    else:
-        context= {
-            "forms":forms,
-
-        }
-    return render(request,'contact.html',context)
-
 def contact(request):
     forms = reviewForm(request.POST or None)
     if request.method == "POST":
@@ -69,5 +66,17 @@ def contact(request):
     return render(request,'contact.html',context)
 
 def gallery(request):
-    data = Gallery.objects.all()
-    return render(request, 'gallery.html', {'data':data})
+    image = Gallery.objects.all()
+    context = {
+        "image" : image,
+    }
+    return render(request, 'gallery.html', context)
+
+
+def package(request):
+    # package = Package.objects.all()
+    is_normal = Package.objects
+    context = {
+        "package" : package,
+    }
+    return render(request, 'facilities.html',context)

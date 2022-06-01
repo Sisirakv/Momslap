@@ -73,10 +73,12 @@ def gallery(request):
     return render(request, 'gallery.html', context)
 
 
-def package(request):
+def packages(request):
     # package = Package.objects.all()
-    is_normal = Package.objects
+    is_normal = Package.objects.filter()
+    is_vip = Package.objects.filter()
     context = {
-        "package" : package,
+        "vip" : is_normal,
+        "normal" : is_vip,
     }
     return render(request, 'facilities.html',context)

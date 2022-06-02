@@ -74,9 +74,16 @@ def gallery(request):
 
 
 def package(request):
-    # package = Package.objects.all()
-    is_normal = Package.objects
+    
+    v_package = "Vip"
+    n_package = "Normal"
+    vip_package = Package.objects.filter(package_type=v_package)
+    print(vip_package)
+    # print(package)
+    normal_package = Package.objects.filter(package_type=n_package)
+    print(normal_package)
     context = {
-        "package" : package,
+        "normal" : normal_package,
+        "vip" : vip_package,
     }
     return render(request, 'facilities.html',context)

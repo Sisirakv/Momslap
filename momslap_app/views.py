@@ -14,6 +14,7 @@ def home(request):
     banner = Banner.objects.all()
     testimonials = Testimonial.objects.all()
     context = {
+        "is_home": True,
         "testimonial" : testimonials,
         "banner" : banner,
 
@@ -23,14 +24,21 @@ def home(request):
 
 
 def about(request):
-    return render(request, 'about.html')
+    context = {
+        "is_about" : True,
+    }
+    return render(request, 'about.html', context)
 
-def service(request):
-    return render(request, 'facilities.html')
+def facility(request):
+    context = {
+        "is_facility" : True,
+    }
+    return render(request, 'facilities.html', context)
 
 def team(request):
     doctors = Doctors.objects.all()
     context = {
+        "is_doctor": True,
         "doctors" : doctors,
     }
     return render(request, 'team.html', context)
@@ -39,13 +47,22 @@ def learn(request):
     return render(request,'learn.html')
 
 def specialities(request):
-    return render(request, 'specialities.html')
+    context = {
+        "is_specialities" : True,
+    }
+    return render(request, 'specialities.html',context)
 
 def specialities_2(request):
-    return render(request, 'specialities2.html')
+    context = {
+        "is_specialities" : True,
+    }
+    return render(request, 'specialities2.html', context)
 
 def specialities_3(request):
-    return render(request, 'specialities3.html')
+    context = {
+        "is_specialities" : True,
+    }
+    return render(request, 'specialities3.html', context)
 
 def testimonial(request):
     review = Testimonial.objects.all()
@@ -60,6 +77,7 @@ def contact(request):
             return redirect('Contact')
     else:
         context= {
+            "is_contact":True,
             "forms":forms,
 
         }
@@ -68,17 +86,24 @@ def contact(request):
 def gallery(request):
     image = Gallery.objects.all()
     context = {
+        "is_gallery":True,
         "image" : image,
     }
     return render(request, 'gallery.html', context)
 
 
-def packages(request):
-    # package = Package.objects.all()
-    is_normal = Package.objects.filter()
-    is_vip = Package.objects.filter()
+def package(request):
+    
+    v_package = "Vip"
+    n_package = "Normal"
+    vip_package = Package.objects.filter(package_type=v_package)
+    print(vip_package)
+    # print(package)
+    normal_package = Package.objects.filter(package_type=n_package)
+    print(normal_package)
     context = {
-        "vip" : is_normal,
-        "normal" : is_vip,
+        "is_facility":True,
+        "normal" : normal_package,
+        "vip" : vip_package,
     }
     return render(request, 'facilities.html',context)

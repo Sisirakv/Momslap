@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="icon" href="#">
+        <!-- <link rel="icon" href="#"> -->
         
         <title>MOM'S LAP</title>
 
@@ -39,6 +39,11 @@
 
          <!-- custom CSS -->
         <link href=" {% static 'css/custom.css' %} " rel="stylesheet">
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
 </head>
 <body>
 
@@ -54,14 +59,13 @@
                 </button>	
             </div>								
             <ul class="menu">
-                <li class="scrollspy active"><a href="{% url 'Home' %}">Home</a></li>
-                <li class="scrollspy"><a href="{% url 'About' %}">About Us</a></li>
-                <li class="scrollspy"><a href="{% url 'Service' %}">Facilities</a></li>
-                <li class="scrollspy"><a href="{% url 'Specialities' %}">Specialities</a></li>
-                <!-- <li class="scrollspy"><a href="{% url 'Testimonial' %}">Testimonials</a></li> -->
-                <li class="scrollspy"><a href="{% url 'Team' %}">Doctors</a></li>
-                <li class="scrollspy"><a href="{% url 'Gallery' %}">Gallery</a></li>
-                <li class="scrollspy"><a href="{% url 'Contact' %}">Contact</a></li>
+                <li {% if is_home %} class="active"{% endif %}><a href="{% url 'Home' %}">Home</a></li>
+                <li {% if is_about %} class="active"{% endif %}><a href="{% url 'About' %}">About Us</a></li>
+                <li {% if is_facility %} class="active"{% endif %}><a href="{% url 'Service' %}">Facilities</a></li>
+                <li {% if is_specialities %} class="active"{% endif %}><a href="{% url 'Specialities' %}">Specialities</a></li>
+                <li {% if is_doctor %} class="active"{% endif %}><a href="{% url 'Team' %}">Doctors</a></li>
+                <li {% if is_gallery %} class="active"{% endif %}><a href="{% url 'Gallery' %}">Gallery</a></li>
+                <li {% if is_contact %} class="active"{% endif %}><a href="{% url 'Contact' %}">Contact</a></li>
             </ul>
             <ul class="attributes">
                 <li><a href="#" class="toggle-search-fullscreen"><span class="ti-search"></span></a></li>					
@@ -144,11 +148,28 @@
                     </div>
                 </div>
             </div>
+           
+          
         </div>
     </footer>
 
-	
-</body>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://api.whatsapp.com/send?phone=7593999 200&text=Hello this is the starting message" class="float" target="_blank" style="	position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+      font-size:30px;
+        box-shadow: 2px 2px 3px #999;
+      z-index:100;">
+        <i class="fa fa-whatsapp my-float" style="margin-top:16px;"></i>
+        </a>
+
 
     <!-- jQuery -->
     <script src=" {% static 'vendor/jquery/jquery.min.js' %} "></script>
@@ -202,6 +223,6 @@
     <script src=" {% static 'js/jarallax.js' %} "></script>
     
 	
-
+</body>
 <!-- Mirrored from html.multipurposethemes.com/pregnancy/pregnancy-five/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 26 May 2022 10:36:49 GMT -->
 </html>

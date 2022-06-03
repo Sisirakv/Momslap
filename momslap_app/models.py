@@ -45,3 +45,6 @@ class Package(models.Model):
     plan_name = models.CharField(max_length=200)
     price = models.IntegerField()
     content = HTMLField()
+
+    def __str__(self):
+        return self.package_type,self.plan_name

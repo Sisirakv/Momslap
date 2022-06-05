@@ -97,10 +97,7 @@ def package(request):
     v_package = "Vip"
     n_package = "Normal"
     vip_package = Package.objects.filter(package_type=v_package)
-    print(vip_package)
-    # print(package)
     normal_package = Package.objects.filter(package_type=n_package)
-    print(normal_package)
     context = {
         "is_facility":True,
         "normal" : normal_package,
